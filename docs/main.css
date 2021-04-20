@@ -92,7 +92,7 @@ main {
 }
 
 #portrait {
-    width: 100%;
+    width: auto;
     height: auto;
     border: 5px solid #1d70a2;
     margin: 10px;
