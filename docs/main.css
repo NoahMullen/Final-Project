@@ -19,35 +19,6 @@ body {
     background-color: #e3d0d8;
 }
 
-footer {
-    width: 100%;
-    color: #ffffff;
-    background-color: #423629;
-    border-top: 10px solid #1d70a2;
-}
-
-footer div {
-    display: flex;
-    justify-content: center;
-}
-
-footer nav ul {
-    width: 25%;
-    margin: var(--center);
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-}
-
-footer li a, footer li i {
-    color: #ffffff;
-    font-size: 1.5em;
-}
-
-/*  ------------------------
-    Universal Styles - Main 
-    ------------------------*/
-
 header {
     width: 100%;
     font-size: 20pt;
@@ -77,14 +48,45 @@ header nav a:hover {
     color: #ffffffc0;
 }
 
+footer {
+    width: 100%;
+    color: #ffffff;
+    background-color: #423629;
+    border-top: 10px solid #1d70a2;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+}
+
+footer nav ul {
+    width: 25%;
+    margin: var(--center);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+footer li a, footer li i {
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+/*  ------------------------
+    Universal Styles - Main 
+    ------------------------*/
+
 h2 {
     font-size: 2em;
-    line-height: 2em;
+    line-height: 1.5em;
+    text-decoration: underline;
 }
 
 h3 {
     font-size: 1.5em;
     line-height: 1.5em;
+    text-decoration: underline;
 }
 
 main {
@@ -108,7 +110,10 @@ aside {
     margin: 10px;
 }
 
-
+aside ul, main div ul {
+    list-style-type: square;
+    list-style-position: inside;
+}
 
 /* ---------------------------
     Desktop and Tablet Styles 

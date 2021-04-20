@@ -19,6 +19,35 @@ body {
     background-color: #e3d0d8;
 }
 
+header {
+    width: 100%;
+    font-size: 20pt;
+    line-height: 1.5em;
+    border-bottom: 10px solid #1d70a2;
+    background-color: #839788;
+}
+
+header h1 {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+}
+
+header nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+header nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header nav a:hover {
+    color: #ffffffc0;
+}
+
 footer {
     width: 100%;
     color: #ffffff;
@@ -48,4 +77,3 @@ footer li a, footer li i {
     Universal Styles - Resume
     ----------------------------*/
 
-    
