@@ -77,3 +77,21 @@ footer li a, footer li i {
     Universal Styles - Resume
     ----------------------------*/
 
+#heading {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: max-content;
+    margin: 5px auto 0 auto;
+}
+
+#heading h2 {
+    grid-row: 1;
+    justify-self: center;
+    font-size: 2em;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+#heading p {
+    grid-row: 2;
+}
