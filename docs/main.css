@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+/*  Stylesheet for index.html  */
+
+/*  Universal Styles  */
+
+html {
+    --center: 0 auto;
+    color: #000000;
+    font-family: 'Trebuchet MS', Verdana, Helvetica, sans-serif;
+}
+
+body {
+    width: 80%;
+    margin: var(--center);
+    display: grid;
+    background-color: #e3d0d8;
+}
+
+header {
+    width: 100%;
+    display: grid;
+    grid-template-areas: ". head ."
+                        "nav nav nav";
+    font-size: 20pt;
+    line-height: 1.5em;
+    border-bottom: 10px solid #1d70a2;
+    background-color: #839788;
+}
+
+header h1 {
+    font-size: 1.2em;
+    grid-area: "head";
+}
+
+header nav ul {
+    grid-area: "nav";
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+header nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header nav a:hover {
+    color: #ffffffc0;
+}
+
+h2 {
+    font-size: 2em;
+    line-height: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+main {
+    line-height: 1.25em;
+}
+
+#portrait {
+    width: 100%;
+    height: auto;
+    border: 5px solid #1d70a2;
+    margin: 10px;
+}
+
+main > div {
+    border: 5px solid #423629;
+    margin: 5px;
+}
+
+aside {
+    border: 5px solid #d58936;
+    margin: 10px;
+}
+
+footer {
+    width: 100%;
+    color: #ffffff;
+    background-color: #423629;
+    border-top: 10px solid #1d70a2;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+}
+
+footer nav ul {
+    width: 25%;
+    margin: var(--center);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+footer li a, footer li i {
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+/* ---------------------------
+    Desktop and Tablet Styles 
+   --------------------------- */
+
+@media only screen and (min-width: 481px) {
+
+    body {
+        grid-template-areas: "header header"
+                            "main img"
+                            "main aside"
+                            "footer footer";
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    #portrait {
+        grid-area: img;
+    }
+
+    body aside {
+        grid-area: aside;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
+
+/* ---------------------------
+         Mobile Styles 
+   --------------------------- */
+
+@media only screen and (max-width: 480px) {
+
+    body {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    header {
+        order: 1;
+    }
+
+    main {
+        order: 3;
+    }
+
+    #portrait {
+        order: 2;
+    }
+
+    aside {
+        order: 4;
+    }
+
+    footer {
+        order: 5;
+    }
+}
