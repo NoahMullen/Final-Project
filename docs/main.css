@@ -19,9 +19,6 @@ body {
 
 header {
     width: 100%;
-    display: grid;
-    grid-template-areas: ". head ."
-                        "nav nav nav";
     font-size: 20pt;
     line-height: 1.5em;
     border-bottom: 10px solid #1d70a2;
@@ -29,12 +26,12 @@ header {
 }
 
 header h1 {
+    display: flex;
+    justify-content: space-around;
     font-size: 1.2em;
-    grid-area: "head";
 }
 
 header nav ul {
-    grid-area: "nav";
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
