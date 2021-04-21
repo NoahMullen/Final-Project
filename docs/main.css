@@ -30,6 +30,8 @@ header {
     line-height: 1.5em;
     border-bottom: 10px solid var(--blue);
     background-color: var(--green);
+    box-shadow: var(--dark) 0 2px 2px;
+    margin-bottom: 5px;
 }
 
 header h1 {
@@ -58,6 +60,8 @@ footer {
     color: #fff;
     background-color: var(--dark);
     border-top: 10px solid var(--blue);
+    box-shadow: var(--dark) 0 -2px 2px;
+    margin-top: 5px;
 }
 
 footer div {
@@ -102,16 +106,19 @@ main {
     height: auto;
     border: 5px solid var(--blue);
     margin: 10px;
+    box-shadow: var(--dark) 2px 2px 2px;
 }
 
 main > div {
     border: 5px solid var(--dark);
     margin: 5px;
+    box-shadow: var(--dark) 2px 2px 2px;
 }
 
 aside {
     border: 5px solid var(--orange);
     margin: 10px;
+    box-shadow: var(--dark) 2px 2px 2px;
 }
 
 aside ul, main div ul {
