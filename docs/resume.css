@@ -93,6 +93,7 @@ footer li a, footer li i {
     margin: 5px auto 0 auto;
     background-color: var(--orange);
     border-bottom: 5px solid var(--dark);
+    box-shadow: var(--dark) 0 2px 2px;
 }
 
 #heading h2 {

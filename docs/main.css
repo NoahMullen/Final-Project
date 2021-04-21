@@ -113,12 +113,18 @@ main > div {
     border: 5px solid var(--dark);
     margin: 5px;
     box-shadow: var(--dark) 2px 2px 2px;
+    border-radius: 10px;
+}
+
+aside ul, h2, h3, main div p, main div > ul {
+    margin: 0 10px;
 }
 
 aside {
     border: 5px solid var(--orange);
     margin: 10px;
     box-shadow: var(--dark) 2px 2px 2px;
+    border-radius: 10px;
 }
 
 aside ul, main div ul {
