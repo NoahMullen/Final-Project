@@ -85,6 +85,15 @@ footer li a, footer li i {
     Universal Styles - Survey
     -------------------------*/
 
+    body > div {
+        margin: var(--center);
+        font-size: 1.5em;
+    }
+
+    body div > h2, body div > p {
+        display: flex;
+        justify-content: space-around;
+    }
 
 /* ---------------------------
     Desktop and Tablet Styles 
@@ -95,5 +104,5 @@ footer li a, footer li i {
     footer nav ul {
         width: 25%;
     }
-    
+
    }
