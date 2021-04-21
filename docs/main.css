@@ -61,7 +61,6 @@ footer div {
 }
 
 footer nav ul {
-    width: 25%;
     margin: var(--center);
     display: flex;
     flex-flow: row nowrap;
@@ -147,6 +146,10 @@ aside ul, main div ul {
     footer {
         grid-area: footer;
     }
+
+    footer nav ul {
+        width: 25%;
+    }
 }
 
 /* ---------------------------
@@ -179,4 +182,5 @@ aside ul, main div ul {
     footer {
         order: 5;
     }
+
 }

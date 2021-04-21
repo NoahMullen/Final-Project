@@ -61,7 +61,7 @@ footer div {
 }
 
 footer nav ul {
-    width: 25%;
+    width: 50%;
     margin: var(--center);
     display: flex;
     flex-flow: row nowrap;
@@ -80,8 +80,11 @@ footer li a, footer li i {
 #heading {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    width: max-content;
+    width: 100%;
+    height: auto;
     margin: 5px auto 0 auto;
+    background-color: #d58936;
+    border-bottom: 5px solid #423629;
 }
 
 #heading h2 {
@@ -89,9 +92,38 @@ footer li a, footer li i {
     justify-self: center;
     font-size: 2em;
     text-decoration: underline;
-    margin-bottom: 10px;
+    line-height: 1.5em;
 }
 
 #heading p {
     grid-row: 2;
+    margin: var(--center);
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.25em;
+  text-decoration: underline;
+}
+
+main div {
+    font-size: 1.25em;
+    line-height: 1.25em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #423629;
+}
+
+main div p span {
+    margin-left: 100px;
+}
+
+main div > ul {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+main div ul ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    margin-left: 20px;
 }
