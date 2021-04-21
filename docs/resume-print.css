@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/*  Stylesheet for Printing resume.html  */
+
+@page {
+    size: 8.5in 11in;
+    margin: 1in;
+}
+
+@media only print {
+
+    header, footer {
+       display: none;
+    }
+
+    html {
+        --center: 0 auto;
+        font-family: 'Trebuchet MS', Verdana, Helvetica, sans-serif;
+    }
+
+    body {
+        line-height: 18pt;
+        font-size: 12pt;
+    }
+
+    h2 {
+        font-size: 16pt;
+        margin-left: 200pt;
+    }
+
+    #heading p {
+        justify-content: center;
+        margin-left: 10pt;
+        margin-right: 10pt;
+        font-size: 12pt;
+    }
+
+    #heading p::after {
+        content: " | email: nsmullen@my.milligan.edu | LinkedIn: https://www.linkedin.com/in/noahmullen/";
+    }
+
+    #heading {
+        margin-bottom: 10pt;
+        border-top: 3pt solid #000000;
+        border-bottom: 3pt solid #000000;
+        padding-top: 2pt;
+        padding-bottom: 2pt;
+    }
+
+    h3 {
+        text-decoration: underline;
+        font-size: 16pt;
+    }
+
+    main div > ul {
+        list-style-type: square;
+        list-style-position: inside;
+    }
+
+    main div ul ul {
+        list-style-type: circle;
+        list-style-position: inside;
+        margin-left: 10pt;
+    }
+
+    main div {
+        margin-bottom: 5pt;
+        border-bottom: 1pt solid #000000;
+    }
+
+    main div p span {
+        float: right;
+    }
+}
