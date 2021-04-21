@@ -8,7 +8,12 @@
 
 html {
     --center: 0 auto;
-    color: #000000;
+    --back: #e3d0d8;
+    --dark: #423629;
+    --blue: #1d70a2;
+    --orange: #d58936;
+    --green: #839788;
+    color: #000;
     font-family: 'Trebuchet MS', Verdana, Helvetica, sans-serif;
 }
 
@@ -16,15 +21,15 @@ body {
     width: 80%;
     margin: var(--center);
     display: grid;
-    background-color: #e3d0d8;
+    background-color: var(--back);
 }
 
 header {
     width: 100%;
     font-size: 20pt;
     line-height: 1.5em;
-    border-bottom: 10px solid #1d70a2;
-    background-color: #839788;
+    border-bottom: 10px solid var(--blue);
+    background-color: var(--green);
 }
 
 header h1 {
@@ -50,9 +55,9 @@ header nav a:hover {
 
 footer {
     width: 100%;
-    color: #ffffff;
-    background-color: #423629;
-    border-top: 10px solid #1d70a2;
+    color: #fff;
+    background-color: var(--dark);
+    border-top: 10px solid var(--blue);
 }
 
 footer div {
@@ -69,7 +74,7 @@ footer nav ul {
 }
 
 footer li a, footer li i {
-    color: #ffffff;
+    color: #fff;
     font-size: 1.5em;
 }
 
@@ -83,8 +88,8 @@ footer li a, footer li i {
     width: 100%;
     height: auto;
     margin: 5px auto 0 auto;
-    background-color: #d58936;
-    border-bottom: 5px solid #423629;
+    background-color: var(--orange);
+    border-bottom: 5px solid var(--dark);
 }
 
 #heading h2 {
@@ -110,7 +115,7 @@ main div {
     font-size: 1.25em;
     line-height: 1.25em;
     margin-bottom: 10px;
-    border-bottom: 1px solid #423629;
+    border-bottom: 1px solid var(--dark);
 }
 
 main div p span {
