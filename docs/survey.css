@@ -70,7 +70,6 @@ footer div {
 }
 
 footer nav ul {
-    width: 25%;
     margin: var(--center);
     display: flex;
     flex-flow: row nowrap;
@@ -86,3 +85,15 @@ footer li a, footer li i {
     Universal Styles - Survey
     -------------------------*/
 
+
+/* ---------------------------
+    Desktop and Tablet Styles 
+   --------------------------- */
+
+   @media only screen and (min-width: 481px) {
+
+    footer nav ul {
+        width: 25%;
+    }
+    
+   }
