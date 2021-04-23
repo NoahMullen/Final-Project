@@ -74,6 +74,7 @@ footer nav ul {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
+    max-width: 400px;
 }
 
 footer li a, footer li i {
@@ -165,9 +166,6 @@ aside ul, main div ul {
         grid-area: footer;
     }
 
-    footer nav ul {
-        width: 25%;
-    }
 }
 
 /* ---------------------------

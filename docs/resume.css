@@ -74,6 +74,7 @@ footer nav ul {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
+    max-width: 400px;
 }
 
 footer li a, footer li i {
@@ -142,10 +143,6 @@ main div ul ul {
 
     #grad {
         margin-left: 100px;
-    }
-
-    footer nav ul {
-        width: 25%;
     }
 
 }

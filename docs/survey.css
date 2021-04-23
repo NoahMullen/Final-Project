@@ -74,6 +74,7 @@ footer nav ul {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
+    max-width: 400px;
 }
 
 footer li a, footer li i {
@@ -112,10 +113,17 @@ footer li a, footer li i {
     }
 
     form > fieldset > legend {
-        background-color: var(--blue);
-        border: 3px transparent none;
+        border: 3px double var(--dark);
         box-shadow: var(--dark) 1px 1px 1px;
         width: max-content;
+    }
+
+    fieldset fieldset legend {
+        border: 1px solid var(--dark);
+    }
+
+    input {
+        margin-bottom: 5px;
     }
 
     #submit {
@@ -128,10 +136,6 @@ footer li a, footer li i {
    --------------------------- */
 
    @media only screen and (min-width: 481px) {
-
-    footer nav ul {
-        width: 25%;
-    }
 
     .smallBox {
         width: 25%;
