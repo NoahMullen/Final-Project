@@ -92,8 +92,9 @@ footer li a, footer li i {
     height: auto;
     margin: 5px auto 0 auto;
     background-color: var(--orange);
-    border-bottom: 5px solid var(--dark);
-    box-shadow: var(--dark) 0 2px 2px;
+    border: 5px solid var(--dark);
+    box-shadow: var(--dark) 1px 2px 2px;
+    border-radius: 10px;
 }
 
 #heading h2 {
