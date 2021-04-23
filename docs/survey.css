@@ -85,17 +85,43 @@ footer li a, footer li i {
     Universal Styles - Survey
     -------------------------*/
 
-    body > div {
-        margin: var(--center);
-        font-size: 1.5em;
-    }
-
-    body div > h2, body div > p {
+    #head h2, #head p {
         display: flex;
         justify-content: space-around;
     }
 
-    
+    #head {
+        margin: 0 auto 10px auto;
+        font-size: 1.5em;
+        width: 100%;
+        line-height: 1.5em;
+        background-color: var(--orange);
+        border-radius: 10px;
+        box-shadow: var(--dark) 1px 2px 2px;
+    }
+
+    h2 {
+        text-decoration: underline;
+        font-size: 1.25em;
+    }
+
+    #easyQuestions, #hardQuestions {
+        display: flex;
+        flex-flow: column nowrap;
+        margin-bottom: 5px;
+    }
+
+    form > fieldset > legend {
+        background-color: var(--blue);
+        border: 3px transparent none;
+        box-shadow: var(--dark) 1px 1px 1px;
+        width: max-content;
+    }
+
+    #submit {
+        display: flex;
+        justify-content: center;
+    }
 
 /* ---------------------------
     Desktop and Tablet Styles 
@@ -106,5 +132,37 @@ footer li a, footer li i {
     footer nav ul {
         width: 25%;
     }
+
+    .smallBox {
+        width: 25%;
+    }
+
+    .largeBox {
+        width: 40%;
+    }
+    
+    textarea {
+        width: 50%;
+    }
+
+   }
+
+/* ---------------------------
+         Mobile Styles 
+   --------------------------- */
+
+   @media only screen and (max-width: 480px) {
+
+        .smallBox {
+            width: 50%;
+        }
+
+        .largeBox {
+            width: 100%;
+        }
+
+        textarea {
+            width: 100%;
+        }
 
    }

@@ -40,17 +40,17 @@
                 <legend>Starting easy...</legend>
 
                 <label for="fName">First Name</label>
-                <input name="firstName" id="fName" type="text" />
+                <input name="firstName" id="fName" type="text" class="smallBox"/>
 
                 <label for="favNum">Favorite Number</label>
-                <input name="favNumber" id="favNum" type="number" /> 
+                <input name="favNumber" id="favNum" type="number" class="smallBox"/> 
 
                 <label for="favColor">Favorite Color</label>
                 <input name="favColor" id="favColor" type="color" />
 
                 <fieldset id="pets">
-                    <legend>Type of Pet you have:</legend>
-                    <input name="pet" id="petD" type="radio" />
+                    <legend>Type of Pet you have*</legend>
+                    <input name="pet" id="petD" type="radio" required/>
                     <label for="petD">Dog</label>
 
                     <input name="pet" id="petC" type="radio" />
@@ -68,12 +68,12 @@
                     <input name="pet" id="petO" type="radio" />
                     <label for="petO">Other</label>
 
-                    <input name="pet" id="petN" type="radio" />
+                    <input name="pet" id="petN" type="radio" checked />
                     <label for="petN">None</label>
                     </fieldset>
 
-                <label for="found">How you found this site</label>
-                <select name="foundSite" id="found">
+                <label for="found">How you found this site*</label>
+                <select name="foundSite" id="found" required class="largeBox">
                     <option value="none"></option>
                     <option value="me">Directly from me</option>
                     <option value="friend">From a friend</option>
@@ -87,16 +87,16 @@
             <fieldset id="hardQuestions">
                 <legend>Now for some curveballs...</legend>
 
-                <label for="sqrt256">&Sqrt;256</label>
-                <input name="sqrt256" id="sqrt256" type="number" />
+                <label for="sqrt256">&Sqrt;256 (no calculators)</label>
+                <input name="sqrt256" id="sqrt256" type="text" class="smallBox"/>
 
                 <label for="favLeader">Favorite historic leader</label>
-                <input name="favLeader" id="favLeader" type="text" />
+                <input name="favLeader" id="favLeader" type="text" class="largeBox"/>
 
                 <fieldset id="capSwaz">
-                    <legend>Capital of Eswatini/Swaziland</legend>
+                    <legend>Capital of Eswatini/Swaziland*</legend>
 
-                    <input name="capital" id="Mb" type="radio" />
+                    <input name="capital" id="Mb" type="radio" required/>
                     <label for="Mb">Mbabane</label>
 
                     <input name="capital" id="Lo" type="radio" />
@@ -108,7 +108,7 @@
                     <input name="capital" id="Ne" type="radio" />
                     <label for="Ne">Neither</label>
 
-                    <input name="capital" id="No" type="radio" />
+                    <input name="capital" id="No" type="radio" checked />
                     <label for="No">Prefer Not to Guess</label>
                 </fieldset>
 
@@ -117,7 +117,7 @@
             </fieldset>
 
             <fieldset id="submit">
-                <input name="Submit" type="submit" />
+                <input name="submit" value="Submit" type="submit" />
             </fieldset>
         </form>
 
