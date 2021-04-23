@@ -6,14 +6,14 @@
     Universal Styles - All  
     -----------------------*/
 
-html {
+:root {
     --center: 0 auto;
     --back: #e3d0d8;
     --dark: #423629;
     --blue: #1d70a2;
     --orange: #d58936;
     --green: #839788;
-    color: #000000;
+    color: var(--dark);
     font-family: 'Trebuchet MS', Verdana, Helvetica, sans-serif;
 }
 
@@ -40,24 +40,24 @@ header h1 {
     font-size: 1.2em;
 }
 
-header nav ul {
+#page-nav ul {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
 }
 
-header nav a {
+#page-nav a {
     text-decoration: none;
     color: inherit;
 }
 
-header nav a:hover {
-    color: #ffffffc0;
+#page-nav a:hover {
+    color: var(--back);
 }
 
 footer {
     width: 100%;
-    color: #fff;
+    color: var(--back);
     background-color: var(--dark);
     border-top: 10px solid var(--blue);
     box-shadow: var(--dark) 0 -2px 2px;
@@ -78,7 +78,7 @@ footer nav ul {
 }
 
 footer li a, footer li i {
-    color: #fff;
+    color: var(--back);
     font-size: 1.5em;
 }
 
@@ -119,6 +119,14 @@ main > div {
 
 aside ul, h2, h3, main div p, main div > ul {
     margin: 0 10px;
+}
+
+main div:first-of-type p {
+    margin-bottom: 5px;
+}
+
+main div ul {
+    margin-bottom: 5px;
 }
 
 aside {

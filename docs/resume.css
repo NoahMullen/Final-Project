@@ -6,14 +6,14 @@
     Universal Styles - All  
     -----------------------*/
 
-html {
+:root {
     --center: 0 auto;
     --back: #e3d0d8;
     --dark: #423629;
     --blue: #1d70a2;
     --orange: #d58936;
     --green: #839788;
-    color: #000;
+    color: var(--dark);
     font-family: 'Trebuchet MS', Verdana, Helvetica, sans-serif;
 }
 
@@ -40,18 +40,18 @@ header h1 {
     font-size: 1.2em;
 }
 
-header nav ul {
+#page-nav ul {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
 }
 
-header nav a {
+#page-nav a {
     text-decoration: none;
     color: inherit;
 }
 
-header nav a:hover {
+#page-nav a:hover {
     color: #ffffffc0;
 }
 
@@ -88,7 +88,7 @@ footer li a, footer li i {
 
 #heading {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
     width: 100%;
     height: auto;
     margin: 5px auto 0 auto;
@@ -152,10 +152,14 @@ main div ul ul {
    --------------------------- */
 
 @media only screen and (max-width: 480px) {
-    
-    #heading p span::before {
-        content: "\A";
-        white-space: pre;
+
+    #heading p {
+        font-size: 0.8em;
+    }
+
+    #heading p > span {
+        display: flex;
+        justify-content: center;
     }
 
     #heading p span span {
