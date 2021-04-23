@@ -13,7 +13,7 @@ html {
     --blue: #1d70a2;
     --orange: #d58936;
     --green: #839788;
-    color: #000000;
+    color: #000;
     font-family: 'Trebuchet MS', Verdana, Helvetica, sans-serif;
 }
 
@@ -92,7 +92,7 @@ footer li a, footer li i {
 
     #head {
         margin: 0 auto 10px auto;
-        font-size: 1.5em;
+        font-size: 1.25em;
         width: 100%;
         line-height: 1.5em;
         background-color: var(--orange);
