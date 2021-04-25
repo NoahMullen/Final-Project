@@ -86,6 +86,10 @@ footer li a, footer li i {
     Universal Styles - Survey
     -------------------------*/
 
+    :root {
+        --req: hsl(0, 60%, 50%);
+    }
+
     #head h2, #head p {
         display: flex;
         justify-content: space-around;
@@ -110,6 +114,18 @@ footer li a, footer li i {
         display: flex;
         flex-flow: column nowrap;
         margin-bottom: 5px;
+    }
+
+    #req {
+        color: var(--req);
+    }
+
+    .req {
+        color: var(--req);
+    }
+
+    .largeBox:focus:invalid, .smallBox:focus:invalid {
+        box-shadow: var(--req) 0 0 5px;
     }
 
     form > fieldset > legend {

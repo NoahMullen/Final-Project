@@ -37,20 +37,23 @@
 
         <form id="survey" action="#" method="POST">
             <fieldset id="easyQuestions">
-                <legend>Starting easy...</legend>
+                <legend>Starting easy...<br/><span id="req">* = Required</span></legend>
 
-                <label for="fName">First Name</label>
-                <input name="firstName" id="fName" type="text" class="smallBox"/>
+                <label for="fName">First Name<span class="req">*</span></label>
+                <input name="firstName" id="fName" type="text" class="smallBox" required minlength="2" autocomplete="off"/>
+
+                <label for="email">An Email<span class="req">*</span></label>
+                <input name="email" id="email" type="email" class="smallBox" required placeholder="someone@somewhere.xyz" autocomplete="off"/>
 
                 <label for="favNum">Favorite Number</label>
-                <input name="favNumber" id="favNum" type="number" class="smallBox"/> 
+                <input name="favNumber" id="favNum" type="number" class="smallBox" value="0" autocomplete="off"/> 
 
                 <label for="favColor">Favorite Color</label>
-                <input name="favColor" id="favColor" type="color" />
+                <input name="favColor" id="favColor" type="color" autocomplete="off"/>
 
                 <fieldset id="pets">
-                    <legend>Type of Pet you have*</legend>
-                    <input name="pet" id="petD" type="radio" required/>
+                    <legend>Type of Pet you have</legend>
+                    <input name="pet" id="petD" type="radio" />
                     <label for="petD">Dog</label>
 
                     <input name="pet" id="petC" type="radio" />
@@ -72,9 +75,9 @@
                     <label for="petN">None</label>
                     </fieldset>
 
-                <label for="found">How you found this site*</label>
-                <select name="foundSite" id="found" required class="largeBox">
-                    <option value="none"></option>
+                <label for="found">How you Found this Site<span class="req">*</span></label>
+                <select name="foundSite" id="found" required class="largeBox" >
+                    <option value=""></option>
                     <option value="me">Directly from me</option>
                     <option value="friend">From a friend</option>
                     <option value="github">On GitHub</option>
@@ -88,15 +91,15 @@
                 <legend>Now for some curveballs...</legend>
 
                 <label for="sqrt256">&Sqrt;256 (no calculators)</label>
-                <input name="sqrt256" id="sqrt256" type="text" class="smallBox"/>
+                <input name="sqrt256" id="sqrt256" type="text" class="smallBox" minlength="1" autocomplete="off"/>
 
-                <label for="favLeader">Favorite historic leader</label>
-                <input name="favLeader" id="favLeader" type="text" class="largeBox"/>
+                <label for="favLeader">Favorite Song & Band/Artist of It</label>
+                <input name="favLeader" id="favLeader" type="text" class="largeBox" minlength="2" autocomplete="off"/>
 
                 <fieldset id="capSwaz">
-                    <legend>Capital of Eswatini/Swaziland*</legend>
+                    <legend>Capital of Eswatini/Swaziland</legend>
 
-                    <input name="capital" id="Mb" type="radio" required/>
+                    <input name="capital" id="Mb" type="radio" />
                     <label for="Mb">Mbabane</label>
 
                     <input name="capital" id="Lo" type="radio" />
@@ -112,8 +115,8 @@
                     <label for="No">Prefer Not to Guess</label>
                 </fieldset>
 
-                <label for="fact">A random fun fact</label>
-                <textarea name="funFact" id="fact" rows="3" cols="50" wrap="soft"></textarea>
+                <label for="fact">A Random Fun Fact</label>
+                <textarea name="funFact" id="fact" rows="3" cols="50" wrap="soft" autocomplete="off"></textarea>
             </fieldset>
 
             <fieldset id="submit">
