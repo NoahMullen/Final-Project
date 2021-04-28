@@ -13,8 +13,9 @@
        display: none;
     }
 
-    html {
+    :root {
         --center: 0 auto;
+        --dark: #423629;
         font-family: 'Trebuchet MS', Verdana, Helvetica, sans-serif;
     }
 
@@ -29,22 +30,27 @@
     }
 
     #heading p {
+        display: flex;
+        flex-flow: row wrap;
         justify-content: center;
-        margin-left: 10pt;
-        margin-right: 10pt;
-        font-size: 12pt;
+        font-size: 11pt;
+        line-height: 15pt;
     }
 
     #heading p::after {
-        content: " | email: nsmullen@my.milligan.edu | LinkedIn: https://www.linkedin.com/in/noahmullen/";
+        content: "email: nsmullen@my.milligan.edu | LinkedIn: https://www.linkedin.com/in/noahmullen/";
     }
 
     #heading {
         margin-bottom: 10pt;
-        border-top: 3pt solid #000000;
-        border-bottom: 3pt solid #000000;
+        border-top: 3pt solid var(--dark);
+        border-bottom: 3pt solid var(--dark);
         padding-top: 2pt;
         padding-bottom: 2pt;
+    }
+
+    main div:first-of-type p {
+        margin: var(--center);
     }
 
     h3 {
@@ -65,10 +71,10 @@
 
     main div {
         margin-bottom: 5pt;
-        border-bottom: 1pt solid #000000;
+        border-bottom: 1pt solid var(--dark);
     }
 
-    main div p span {
+   /* main div p span {
         float: right;
-    }
+    }*/
 }
